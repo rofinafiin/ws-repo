@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"log"
@@ -106,5 +107,5 @@ func main() {
 		return c.Render("home.html", nil)
 	})
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(musik.Dangdut()))
 }
